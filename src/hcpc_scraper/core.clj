@@ -44,7 +44,11 @@
   (seq (map person-record (filter seq (map deref (cons (jitter start-id end-id)
                                                        (person-tables start-id end-id p)))))))
 
-(defn verify-records-end [])
+(defn some-record-at [id]
+  (keys (professions)))
+
+(defn verify-records-end [end-id]
+  )
 
 ; Add a random wait before each chunk is requested to not seem like DOS attacker
 (defn person-records [start-id chunk-size p]
